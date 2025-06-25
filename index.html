@@ -8,30 +8,37 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <script src="script.js" defer></script>
     </head>
     <body>
         <div class="nav-cont">
             <nav class="navbar">
                 <div class="img-cont">
-                    <img src="logo">
+                    <img src="logo.gif" id="logo">
                 </div>
                 <ul>
-                    <li>About me</li>
-                    <li>Contacts</li>
-                    <li>Case Study</li>
+                    <li><a href="aboutme.html">About me</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="projects.html">Case Study</a></li>
                 </ul>
             </nav>
         </div>
         <div class="hero-cont">
             <div class="hero">
-                <img src="portrait">
+                <img src="noPaper.JPG" id="mePortrait">
                 <!-- this is where my portrait picture will go -->
                 <div class="adj-cont">
-                    <h1>I AM</h1> <!--this is where my adjectives will go-->
-                    <h1 id="adj-word">FILLER</h1><!--This is the JS word slide element-->
+                    <h1 class="whoIAm">I AM</h1> <!--this is where my adjectives will go-->
+                    <div id="adj-wordCont">
+                        <div id="adj-word">
+                            <p>DRIVEN</p>
+                            <p>A CATAPULT</p>
+                            <p>SKYBOUND</p>
+                            <p>ACCOMPLISHED</p>
+                        </div>
+                    </div><!--This is the JS word slide element-->
                 </div>
             </div>
-            <div class="introBtn">GET STARTED</div>
         </div>
     </body>
 </html>
