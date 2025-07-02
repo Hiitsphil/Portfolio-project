@@ -212,3 +212,8 @@ background:blue;
     transform: scale(1.1);
     cursor:pointer;
 }
+
+.projectCards a{
+    text-decoration: none;
+    color:black;
+}
