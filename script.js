@@ -1,4 +1,5 @@
   const adjWord = document.querySelector('#adj-word');
+  const navBar=document.querySelector(".nav-cont")
 
 function animateAdj1(adjWord){
      adjWord.animate([
@@ -59,6 +60,14 @@ setInterval(() => adjWordLoop(adjWord), 8000);
 //set interval to make it loop
 //still though, wish I could make it so it didnt have to translate all the way back up
 //the loop can also be messed with by users, so its definetly not perfect
+
+document.addEventListener("scroll", ()=>{
+    if(window.scrollY>document.body.scrollHeight*.4){
+        navBar.style.boxShadow="0px -15px 100px rgba(153, 0, 255, 0.5)";
+    } else {
+        navBar.style.boxShadow="none";
+    }
+});
 
 
 
